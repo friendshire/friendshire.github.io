@@ -126,3 +126,13 @@ header { position: relative; padding: 0 5%; }
     display: block;
   }
 }
+
+.smooth-scrollbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  pointer-events: none;
+}
