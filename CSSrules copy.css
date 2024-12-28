@@ -17,6 +17,7 @@ main {
     height: 100%;
     position: absolute;
     transition: .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #fff;
 }
 
 .nav {
@@ -26,4 +27,6 @@ main {
 .nav button {
     font-size: 25px;
     padding: 10px
+}
+.btn-first {
 }
