@@ -37,7 +37,7 @@ header { position: relative; padding: 0 5%; }
   justify-content: space-between;
 }
 
-.navbar .logo { width: 0%; scale: 2.5%; opacity: 0.9; }
+.navbar .logo { width: 0%; scale: 2.5%; opacity: 0.9;}
 
 .navbar .links {
   display: flex;
