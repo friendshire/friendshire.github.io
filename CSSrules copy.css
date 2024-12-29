@@ -13,9 +13,9 @@ main {
     position: relative; /* Для слайдов */
     overflow: hidden; /* Оставляем, как нужно */
     border-radius: 30px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(3px);
     height: 350px;
-
+    z-index: 101;
 }
 
 .slide {
@@ -36,6 +36,7 @@ main {
 }
 
 button {
+    background-color: #1560BD;
     font-size: 25px;
     position: absolute; /* Позиционируем кнопки относительно wrapper */
     top: 50%; /* Центрируем по вертикали */
@@ -47,7 +48,11 @@ button {
     height: 50px;
     justify-content: center;
     align-items: center;
+    text-align: center;
     display: inline-flex;
+    /* border: 7px solid #000; */
+    border: none;
+    font-size: 40px;
 }
 
 .btn-first {
@@ -62,6 +67,8 @@ button {
     .btn-first, .btn-second {
         position: static;
         display: inline-block;
+        margin-top: 30px;
+        line-height: 50px;
     }
     .wrapper {
         text-align: center;
