@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "color-hex-length": "short",
+    "number-leading-zero": "always",
+    "unit-case": "lower",
+    "block-opening-brace-space-before": "always", 
+    "declaration-empty-line-before": "never",     
+    "selector-list-comma-newline-after": "always",
+    "order/properties-alphabetical-order": true,  
+    "max-nesting-depth": 3,
+    "no-duplicate-selectors": true,
+    "scss/dollar-variable-pattern": "^foo-[a-z]+$", 
+    "scss/at-import-partial-extension-blacklist": [".scss"]
+  }
+}

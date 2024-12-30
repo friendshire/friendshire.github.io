@@ -1,0 +1,12 @@
+{
+  "name": "friendshire.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "lint:css": "stylelint '**/*.css' --fix"
+  },
+  "devDependencies": {
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-order": "^6.0.4"
+  }
+}

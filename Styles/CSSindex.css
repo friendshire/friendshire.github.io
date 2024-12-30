@@ -1,0 +1,199 @@
+html { height: 100%; scroll-behavior: smooth; }
+
+body {
+  background-color: #0d1038;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+@media (width <= 576px) {
+  .card-details {
+    display: block;
+  }
+}
+
+.circle {
+  background: rgb(65 105 225 / 40%);
+  border-radius: 50%;
+  height: 60%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: -1;
+}
+
+.content {
+  background: rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  color: #fff;
+  left: 50%;
+  position: absolute;
+  top: 300px;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  z-index: 2;
+}
+
+.container {
+  filter: blur(200px);
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.rounded-frame {
+  background-color: rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+  color: white;
+  left: 50%;
+  max-width: 90%;
+  padding: 20px;
+  position: absolute;
+  top: 200px;
+  transform: translateX(-50%);
+  width: 700px;
+}
+
+.textHead {
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.rounded-frame p { margin-bottom: 40px; }
+.textDiv { margin-left: 15px; }
+.textDiv i { font-size: 30px; margin-bottom: 5px; }
+
+.discordBtn {
+  align-items: center;
+  background-color: #5865f2;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 16px;
+  gap: 8px;
+  margin-left: 15px;
+  margin-top: -35px;
+  padding: 12px 15px;
+  transition: background-color 0.3s ease;
+}
+.discordBtn:hover { background-color: #4854c8; }
+.discordBtn i { font-size: 18px; }
+
+.seasonCards {
+  background-color: rgb(19 19 19);
+  display: flex;
+  margin-top: -300px;
+  padding-bottom: 1000px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+  color: white;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 60px;
+  padding: 20px;
+  width: 45%;
+}
+  
+.card-icon {
+  height: 55px;
+  width: 55px;
+}
+  
+.card-title {
+  font-size: 33px;
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+  
+.card-details {
+  display: flex;
+}
+  
+.card-detail-title {
+  color: #bdbdbd;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  margin-right: 100px;
+  text-align: left;
+}
+  
+.card-detail-value {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.blinkCircle {
+  animation: blink 2s infinite ease-in-out;
+  background-color: #00b300;
+  border-radius: 50%;
+  display: flex;
+  height: 10px;
+  margin-top: 3px;
+  width: 10px;
+}
+
+.blinkCircle.orange {
+  background-color: #ff6500;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+}
+
+@media (width <= 768px) {
+  .rounded-frame {
+    font-size: 0.9em;
+    padding: 20px;
+    top: 150px;
+    transition: all 0.5s cubic-bezier(0.175, 1, 0.32, 1.275);
+  }
+
+  .textDiv i {
+    font-size: 25px;
+    transition: all 0.5s cubic-bezier(0.175, 1, 0.32, 1.275);
+  }
+
+  .textHead {
+    font-size: 29px;
+    margin-bottom: 8px;
+    transition: all 0.5s cubic-bezier(0.175, 1, 0.32, 1.275);
+  }
+
+  .card-detail-value {
+    font-size: 1.1rem;
+    transition: all 0.5s cubic-bezier(0.175, 1, 0.32, 1.275);
+
+  }
+}
+
+@media (width <= 1130px) {
+  .card-details {
+    display: block;
+  }
+}
+
+@media (width <= 400px) {
+  .card-detail-value {
+    font-size: 0.8rem;
+    transition: all 0.5s cubic-bezier(0.175, 1, 0.32, 1.275);
+  }
+}

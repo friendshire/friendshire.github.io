@@ -1,0 +1,94 @@
+.wrapper {
+  margin: auto; /* Центрируем main и кнопки */
+  margin-top: 100px;
+  max-width: 90%;
+  position: relative; /* Создаем контекст позиционирования для кнопок */
+  width: 700px;
+}
+
+main {
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgb(99 99 99 / 50%);
+  height: 400px;
+  line-height: 1.5;
+  overflow: hidden; /* Оставляем, как нужно */
+  position: relative; /* Для слайдов */
+  width: 100%; /* Ширина наследуется от wrapper */
+  z-index: 101;
+}
+
+.slide {
+  color: #fff;
+  height: 100%;
+  hyphens: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  position: absolute;
+  text-align: justify;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.slide h2 {
+  border-bottom: 3px solid #d5ccf0;
+  color: #769ae7;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  text-align: center;
+}
+
+.slide h1 {
+  text-align: center;
+}
+
+button {
+  align-items: center;
+  backdrop-filter: blur(90px);
+  background-color: rgb(15 46 129);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 40px;
+  height: 50px;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  z-index: 102;
+}
+
+.btn-first {
+  left: -100px;
+}
+
+.btn-second {
+  right: -100px;
+}
+
+@media (width <= 662px) {
+  main {
+    min-height: auto;
+  }
+}
+
+@media (width <= 992px) {
+  .btn-first,
+  .btn-second {
+    display: inline-block;
+    line-height: 50px;
+    margin-top: 30px;
+    position: static;
+  }
+  .wrapper {
+    text-align: center;
+  }
+}

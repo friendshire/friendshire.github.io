@@ -1,25 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .card {
-  width: 400px; /* Ширина рамки */
-  padding: 20px; /* Отступы внутри рамки */
   background-color: #1f1f1f; /* Цвет фона рамки */
   border-radius: 10px; /* Скругление углов */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тень рамки */
+  box-shadow: 0 4px 10px rgb(0 0 0 / 20%); /* Тень рамки */
   color: white; /* Цвет текста */
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
+  padding: 20px; /* Отступы внутри рамки */
+  width: 400px; /* Ширина рамки */
 }
 
 .card-icon {
-  width: 50px; /* Размер иконки */
   height: 50px;
+  width: 50px; /* Размер иконки */
 }
 
 .card-title {
-  margin-top: 7px;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: -3px; /* Расстояние между заголовком и деталями */
+  margin-top: 7px;
 }
 
 .card-details {
@@ -28,11 +28,11 @@
 
 
 .card-detail-title {
-  font-size: 14px; /* Размер текста для заголовков (Старт, Завершён, Версия) */
   color: #bdbdbd; /* Серый цвет для заголовков */
-  text-align: left;
-  margin-right: 90px;
+  font-size: 14px; /* Размер текста для заголовков (Старт, Завершён, Версия) */
   margin-bottom: -10px;
+  margin-right: 90px;
+  text-align: left;
 }
 
 .card-detail-value {

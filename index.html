@@ -5,21 +5,30 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="CSSindex.css"/>
-    <link rel="stylesheet" href="CSSheader.css"/>
-    <link rel="stylesheet" href="CSSall.css"/>
-    <link rel="stylesheet" href="/snowFlakes/snow.min.css"/>
-    
+
+    <title>FriendShire ◦ Главная</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles/CSSindex.css"/>
+    <link rel="stylesheet" href="Styles/CSSheader.css"/>
+    <link rel="stylesheet" href="Styles/CSSall.css"/>
+    <link rel="stylesheet" href="Styles/CSSsnow.css"/>
     <link rel="icon" href="FS.ico" type="image/x-icon"/>
 
+    <!-- JS -->
+    <script src="Scripts/JShead.js" defer></script>
+    <script src="Scripts/JSsnow.js" defer></script>
+
+    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
     <script src="https://kit.fontawesome.com/49ea9dc72c.js" crossorigin="anonymous"></script>
-    <title>FriendShire ◦ Главная</title>
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Сайт майнкрафт-сервера FriendShire"/>
     <meta property="og:image" content="FS.ico"/>
     <meta property="og:site_name" content="FriendShire ◦ Главная"/>
+
 </head>
 <body class="smooth-scroll">
     <header>
@@ -131,62 +140,7 @@
     
     <script src="JSall.js"></script>
     <script src="/snowFlakes/Snow.js"></script>
-    <script>
-	    new Snow ();
-    </script>
-    <script>
-        const toggleBtn = document.querySelector(".toggle_btn");
-        const toggleBtnIcon = document.querySelector(".toggle_btn i");
-        const dropDownMenu = document.querySelector(".dropdown_menu");
 
-        toggleBtn.onclick = function() {
-            dropDownMenu.classList.toggle("open");
-            const isOpen = dropDownMenu.classList.contains("open");
-
-            toggleBtnIcon.classList = isOpen ?
-                "fa-solid fa-xmark" :
-                "fa-solid fa-bars";
-        };
-    </script>
-    <script>
-        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-        if (isTouchDevice) {
-            console.log("Плавная прокрутка отключена");
-        } else {
-            document.addEventListener('DOMContentLoaded', () => {
-                console.log("Плавная прокрутка включена");
-
-                // -----------------------
-                // Плавная прокрутка 
-                const smoothCoef = 0.06;
-                const smoothScroll = document.querySelector(".smooth-scroll");
-                const smoothScrollBar = document.querySelector(".smooth-scrollbar");
-
-                function onResize(e) {
-                    smoothScrollBar.style.height = smoothScroll.offsetHeight + "px";
-                }
-
-                window.addEventListener("resize", onResize);
-                onResize();
-
-                let prevY = window.scrollY;
-                let curY = window.scrollY;
-                let y = window.scrollY;
-                let dy;
-
-                function loop(now) {
-                    curY = window.scrollY;
-                    dy = curY - prevY;
-                    y = Math.abs(dy) < 1 ? curY : y + dy * smoothCoef;
-                    prevY = y;
-                    smoothScroll.style.transform = `translate3d(0,${-y}px,0)`;
-
-                    requestAnimationFrame(loop);
-                }
-                requestAnimationFrame(loop);
-                    });
-        }  
-    </script>
 </body>
 
 </html>
