@@ -131,6 +131,19 @@
       new Snow ();
     </script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const main = document.querySelector("main");
+            function adjustHeight() {
+                const lineHeight = parseFloat(getComputedStyle(main).lineHeight);
+                const lines = Math.ceil(main.scrollHeight / lineHeight);
+                main.style.height = `${lines * lineHeight}px`;
+            }
+
+            window.addEventListener("resize", adjustHeight);
+            adjustHeight();
+        });
+    </script>
+    <script>
         const toggleBtn = document.querySelector(".toggle_btn");
         const toggleBtnIcon = document.querySelector(".toggle_btn i");
         const dropDownMenu = document.querySelector(".dropdown_menu");
