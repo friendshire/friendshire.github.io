@@ -41,12 +41,12 @@ main {
 }
 
 button {
-    background-color: #1560BD;
+    background-color: rgba(0, 0, 0, 0.9);
     font-size: 25px;
     position: absolute; /* Позиционируем кнопки относительно wrapper */
     top: 50%; /* Центрируем по вертикали */
     transform: translateY(-50%);
-    z-index: 1; /* Убедимся, что кнопки видны поверх main */
+    z-index: 102; /* Убедимся, что кнопки видны поверх main */
     cursor: pointer;
     border-radius: 500px;
     width: 50px;

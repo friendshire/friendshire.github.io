@@ -16,6 +16,7 @@ p {
     max-width: 90%;
     align-items: center; /* Центрирование по вертикали */
     gap: 10px; /* Отступ между изображениями */
+    z-index: 102;
 }
 .rounded-frame div {
     margin-left: 20px;
