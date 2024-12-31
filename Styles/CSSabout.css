@@ -23,7 +23,7 @@
 }
 
 .rounded-frame img {
-    max-width: 100px;
+    width: 100px;
     height: auto;
     order: 2;
     border-radius: 15px;
@@ -59,4 +59,17 @@
   }
   .rounded-frame h1 {
     margin: 5px;
+  }
+
+  @media (width <= 992px) {
+    .rounded-frame {
+        top: -950px;
+        font-size: 14px;
+        transition: all .5s cubic-bezier(0.175, 1, 0.32, 1.275);
+    }
+    .rounded-frame img {
+        width: 80px;
+        transition: all .5s cubic-bezier(0.175, 1, 0.32, 1.275);
+        margin-left: 20px;
+    }
   }
