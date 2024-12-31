@@ -1,8 +1,8 @@
 .wrapper {
-  margin: auto; /* Центрируем main и кнопки */
+  margin: auto;
   margin-top: 100px;
   max-width: 90%;
-  position: relative; /* Создаем контекст позиционирования для кнопок */
+  position: relative;
   width: 700px;
 }
 
@@ -12,9 +12,9 @@ main {
   box-shadow: 0 0 10px rgb(99 99 99 / 50%);
   height: 400px;
   line-height: 1.5;
-  overflow: hidden; /* Оставляем, как нужно */
-  position: relative; /* Для слайдов */
-  width: 100%; /* Ширина наследуется от wrapper */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   z-index: 101;
 }
 
