@@ -1,0 +1,62 @@
+.rounded-frame {
+    display: flex;
+    background-color: rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    color: white;
+    left: 50%;
+    max-width: 90%;
+    padding: 20px;
+    position: relative;
+    top: -800px;
+    transform: translateX(-50%);
+    width: 700px;
+    align-items: center;
+    z-index: 101;
+    backdrop-filter: blur(4px);
+    flex-direction: column;
+}
+
+.rounded-frame p {
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.rounded-frame img {
+    max-width: 100px;
+    height: auto;
+    order: 2;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+.rf-content {
+    display: flex; 
+    align-items: center;
+}
+.container {
+    filter: blur(200px);
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .circle {
+    background: rgb(65 105 225 / 40%);
+    border-radius: 50%;
+    height: 60%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    z-index: -1;
+  }
+
+  .second {
+    margin-top: 1rem;    
+    display: block;
+  }
+  .rounded-frame h1 {
+    margin: 5px;
+  }
