@@ -73,3 +73,17 @@
         margin-left: 20px;
     }
   }
+
+  .moreBtn {
+    align-items: center;
+    background-color: #333eb4;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-flex;
+    font-size: 16px;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 13px 18px;
+    transition: background-color 0.3s ease;
+  }
+  .moreBtn:hover { background-color: #4050df;}
