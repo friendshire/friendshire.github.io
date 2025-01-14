@@ -37,7 +37,6 @@
 
 @media (width <= 992px) {
     .rounded-frame {
-        padding: 10px;    
         top: -950px;
         font-size: 14px;
         transition: all .5s cubic-bezier(0.175, 1, 0.32, 1.275);
