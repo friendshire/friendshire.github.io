@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Центрирование с разными размерами</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+display: flex;
+justify-content: center; /* Центрируем содержимое по горизонтали */
+align-items: center; /* Центрируем содержимое по вертикали */
+min-height: 100vh; /* Высота экрана */
+background-color: #f0f0f0; /* Фоновый цвет */
+}
+
+.container {
+display: flex;
+justify-content: flex-start; /* Располагаем элементы чуть левее */
+align-items: center;
+gap: 10px; /* Расстояние между блоками */
+width: 500px; /* Ширина контейнера */
+}
+
+.left {
+flex: 1; /* Левый элемент меньше */
+padding: 20px;
+background-color: #4caf50;
+color: white;
+text-align: center;
+border-radius: 5px;
+}
+
+.right {
+flex: 2; /* Правый элемент больше */
+padding: 20px;
+background-color: #2196f3;
+color: white;
+text-align: center;
+border-radius: 5px;
+}
+
+/* Медиа-запрос для маленьких экранов */
+@media (max-width: 600px) {
+.container {
+flex-direction: column; /* Элементы располагаются вертикально */
+width: auto; /* Контейнер адаптируется к ширине экрана */
+}
+
+.left,
+.right {
+flex: unset; /* Отменяем flex-отношения */
+width: 100%; /* Элементы занимают всю ширину контейнера */
+}
+}
+</style>
+</head>
+<body>
+<div class="conctainer">
+<div class="left">Левый блок</div>
+<div class="right">Правый блок</div>
+</div>
+</body>
+</html>
