@@ -72,10 +72,11 @@
 
 .rounded-frame h2 {
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .rounded-frame h3 {
-  margin-top: 2px;
+  margin-top: 15px;
   margin-left: -10px;
   /* border-top: 3px solid #c8cfcb; */
 }
@@ -125,15 +126,14 @@
 }
 
 .content1 {
-  display: none; /* Скрыть все элементы по умолчанию */
+  display: none;
   opacity: 0;
   visibility: hidden;
   transition: all .7s ease;
 }
 .content1.active1 {
-  display: block; /* Показать только активный контент */
+  display: block;
   opacity: 1;
   visibility: visible;
   transition: all .5s ease;
-
 }
