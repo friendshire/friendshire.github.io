@@ -118,9 +118,9 @@
 
   .sidebar,
   .rounded-frame {
-      width: 100%;
+      width: 115%;
       flex: unset;
-      max-width: 100%;
+      max-width: 115%;
       transition: all .5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
   }
 }
