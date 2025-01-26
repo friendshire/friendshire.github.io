@@ -54,7 +54,7 @@
 }
 
 .sidebar ul li {
-  margin: 5px 0;
+  margin: 6px 0;
 }
 
 .sidebar ul li a {
@@ -163,12 +163,12 @@ body {
   color: #ffffff;
 }
 h2 {
-  margin: 0 0 20px 0;
+
 }
 table {
   border-collapse: collapse;
   width: 100%;
-  background-color: #2d2d5a;
+  background-color: #1d1d40;
   border: 1px solid #3c3c6b;
   border-radius: 8px;
   overflow: hidden;
@@ -179,7 +179,7 @@ th, td {
   padding: 12px;
 }
 th {
-  background-color: #3c3c6b;
+  background-color: #26264e;
   color: #ffffff;
   font-size: 18px;
 }
@@ -188,4 +188,8 @@ td {
 }
 .highlight {
   color: #00afff;
+}
+
+#content3 h2 {
+  margin-top: 30px;
 }
