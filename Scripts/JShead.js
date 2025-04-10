@@ -10,3 +10,14 @@ toggleBtn.onclick = function() {
         "fa-solid fa-xmark" :
         "fa-solid fa-bars";
 };
+
+let library = { 
+    name: "City Library", 
+    location: "Downtown", 
+    books: [ 
+    {title: "1984", author: "George Orwell", pages: 328}, 
+    {title: "The Great Gatsby", author: "F. Scott Fitzgerald", pages: 180} 
+    ]
+}; 
+    library.books.append({title: "To Kill a Mockingbird", author: "Harper Lee", pages: 281 }); 
+    console.log(library.books [2].title)

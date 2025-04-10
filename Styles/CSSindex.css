@@ -147,6 +147,9 @@ body {
 .blinkCircle.orange {
   background-color: #ff6500;
 }
+.blinkCircle.red {
+  background-color: #ff0000;
+}
 
 @keyframes blink {
   0%,
