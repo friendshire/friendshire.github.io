@@ -1,9 +1,11 @@
 .wrapper {
+  top: -900px;
   margin: auto;
   margin-top: 100px;
   max-width: 90%;
   position: relative;
   width: 700px;
+
 }
 
 main {

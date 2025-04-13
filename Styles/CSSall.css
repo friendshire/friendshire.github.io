@@ -21,3 +21,34 @@ body {
 body {
   font-weight: 500;
 }
+
+.circle {
+  background: rgb(65 105 225 / 40%);
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: top 5s cubic-bezier(0.4, 0, 0.2, 1), left 5s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Опционально — пульсация */
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.container {
+  filter: blur(100px);
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
