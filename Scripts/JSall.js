@@ -57,3 +57,10 @@ const circle = document.querySelector('.circle');
   // Медленное перемещение каждые 6 секунд
   setInterval(moveRandomly, 6000);
   moveRandomly();
+
+fetch('https://api.mcsrvstat.us/2/play.friendshire.net')
+.then(response => response.json())
+.then(data => {
+  document.getElementById('playerCount').textContent = 
+    data.players.online + " / " + data.players.max;
+});
