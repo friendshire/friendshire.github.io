@@ -39,24 +39,22 @@ if (isTouchDevice) {
 
 const circle = document.querySelector('.circle');
 
-  function moveRandomly() {
-    // Ограничим движение до 60% ширины/высоты экрана
-    const paddingX = window.innerWidth * 0.2;
-    const paddingY = window.innerHeight * 0.2;
+function moveRandomly() {
+  // Ограничим движение до 60% ширины/высоты экрана
+  const paddingX = window.innerWidth * 0.2;
+  const paddingY = window.innerHeight * 0.2;
+  const maxX = window.innerWidth - circle.offsetWidth - paddingX;
+  const maxY = window.innerHeight - circle.offsetHeight - paddingY;
+  const randomX = paddingX + Math.random() * (maxX - paddingX);
+  const randomY = paddingY + Math.random() * (maxY - paddingY);
+  circle.style.left = `${randomX}px`;
+  circle.style.top = `${randomY}px`;
+}
 
-    const maxX = window.innerWidth - circle.offsetWidth - paddingX;
-    const maxY = window.innerHeight - circle.offsetHeight - paddingY;
+// Медленное перемещение каждые 6 секунд
+setInterval(moveRandomly, 6000);
+moveRandomly();
 
-    const randomX = paddingX + Math.random() * (maxX - paddingX);
-    const randomY = paddingY + Math.random() * (maxY - paddingY);
-
-    circle.style.left = `${randomX}px`;
-    circle.style.top = `${randomY}px`;
-  }
-
-  // Медленное перемещение каждые 6 секунд
-  setInterval(moveRandomly, 6000);
-  moveRandomly();
 
 fetch('https://api.mcsrvstat.us/2/play.friendshire.net')
 .then(response => response.json())
@@ -64,3 +62,4 @@ fetch('https://api.mcsrvstat.us/2/play.friendshire.net')
   document.getElementById('playerCount').textContent = 
     data.players.online + " / " + data.players.max;
 });
+
